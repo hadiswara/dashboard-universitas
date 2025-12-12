@@ -175,11 +175,3 @@ Untuk dashboard universitas Indonesia, rekomendasi utama:
 5. Cleveland, W. S., & McGill, R. (1987). *Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods*. Journal of the American Statistical Association.
 
 ---
-
-**Data Visualization Implementation Repository:**
-- GitHub 1: https://github.com/dita24917034/data_visualization.git
-- GitHub 2: https://github.com/RisfiAyuSandika24917035/dashboard-fakultas.git
-
----
-
-*Laporan ini memenuhi requirement tugas Dashboard Universitas - Magister Informatika UII (Max 2 halaman A4)*
