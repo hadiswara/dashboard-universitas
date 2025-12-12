@@ -182,8 +182,7 @@ df_pivot = df_filtered.pivot_table(
     aggfunc='sum'
 )
 
-st.dataframe(
-    df_pivot.style.format('{:,.0f}').background_gradient(cmap='Blues'),
+st.dataframe(df_pivot, use_container_width=True)
     use_container_width=True
 )
 
