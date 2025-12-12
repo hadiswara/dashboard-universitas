@@ -1,0 +1,20 @@
+# Dashboard Universitas - Python Dependencies
+
+# Web Framework
+streamlit
+
+# Data Processing & Analysis
+pandas
+numpy
+
+# Data Visualization
+plotly
+plotly-express
+
+# Utilities
+python-dateutil
+pytz
+
+# Optional: untuk production deployment
+gunicorn
+python-dotenv
