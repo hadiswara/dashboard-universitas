@@ -227,21 +227,3 @@ docker run -p 8501:8501 dashboard-universitas
 | Port 8501 already in use | `streamlit run app.py --server.port 8502` |
 | Slow performance | Verify internet connection, restart Streamlit |
 | Filter tidak bekerja | Refresh browser atau clear cache browser |
-
-## License
-
-MIT License - Bebas digunakan untuk keperluan akademik dan komersial
-
-## Kontribusi
-
-Untuk kontribusi atau saran perbaikan:
-1. Fork repository
-2. Buat branch baru (`git checkout -b feature/improvement`)
-3. Commit perubahan (`git commit -m 'Add improvement'`)
-4. Push ke branch (`git push origin feature/improvement`)
-5. Buat Pull Request
-
----
-
-*Last Updated: 12 Desember 2025*
-*Version: 1.0.0*
