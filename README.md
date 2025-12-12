@@ -1,4 +1,4 @@
-# Dashboard Universitas - Sistem Informasi Manajemen Akademik
+# Dashboard Universitas
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.0%2B-red)
@@ -125,7 +125,7 @@ Dataset adalah simulasi yang dibuat untuk keperluan akademik, mencakup:
 8. Pertanian
 
 ## Cara Menggunakan Dashboard
-
+bisa di akses di link : https://hadiswara-dashboard-universitas.streamlit.app/
 ### 1. Filter Data
 - Pada sidebar kiri, pilih tahun akademik yang ingin dianalisis
 - Pilih satu atau lebih fakultas untuk fokus analisis
@@ -133,20 +133,82 @@ Dataset adalah simulasi yang dibuat untuk keperluan akademik, mencakup:
 
 ### 2. Interpretasi Visualisasi
 
-**Bar Chart - Distribusi Mahasiswa:**
+## Visualisasi Dashboard Universitas
+
+### 1. Bar Chart - Distribusi Mahasiswa
+
+**Deskripsi:**
 - Menunjukkan perbandingan jumlah mahasiswa antar fakultas
 - Warna menunjukkan intensitas (semakin biru = semakin banyak)
 - Hover untuk melihat nilai pasti
 
-**Line Chart - Tren Pertumbuhan:**
-- Menunjukkan trajectory pertumbuhan selama 5 tahun
-- Membantu identifikasi trend positif/negatif
-- Berguna untuk perencanaan kapasitas
+**Kenapa Bar Chart**
 
-**Box Plot - Analisis Kelulusan:**
-- Menunjukkan distribusi & variabilitas antar tahun
-- Outliers ditampilkan sebagai titik individual
-- Membantu identifikasi konsistensi performa
+| Aspek | Deskripsi |
+|---|---|
+| Membandingkan nilai | Bar memudahkan bandingkan 8 kategori (fakultas) sekaligus |
+| Akurasi membaca | Mata manusia lebih akurat membaca panjang bar daripada area/angle |
+| Urutan natural | Bisa di-sort ascending/descending untuk insight cepat |
+| Space efficient | 8 fakultas dapat semua di satu screen |
+| Easy interpretation | Diharapkan Pimpinan instan paham tanpa penjelasan panjang |
+
+---
+
+### 2. Line Chart - Tren Pertumbuhan
+
+**Deskripsi:**
+- Menunjukkan trajectory pertumbuhan mahasiswa selama 8 tahun (2018-2025)
+- Membantu identifikasi trend positif/negatif per fakultas
+- Berguna untuk perencanaan kapasitas & forecasting
+
+**Kenapa Line Chart**
+
+| Aspek | Deskripsi |
+|---|---|
+| Time series visualization | Line chart optimal untuk menampilkan data over time dengan kontinuitas |
+| Multi-series comparison | 8 garis (1 per fakultas) bisa overlay untuk bandingkan trend |
+| Slope interpretation | Kemiringan garis langsung menunjukkan growth rate (steep = cepat, flat = stabil) |
+| Trend detection | Mudah identify naik/turun/stabil; crossing points menunjukkan kompetisi |
+| Predictive insight | Mata otomatis extrapolate trend → bisa predict tahun depan |
+
+---
+
+### 3. Box Plot - Analisis Kelulusan
+
+**Deskripsi:**
+- Menunjukkan distribusi & variabilitas tingkat kelulusan per fakultas
+- Outliers ditampilkan sebagai titik individual (anomali)
+- Membantu identifikasi konsistensi & quality control performa lulusan
+
+**Kenapa Box Plot**
+
+| Aspek | Deskripsi |
+|---|---|
+| Distribusi statistik | Box plot menunjukkan median, Q1, Q3, range, dan outlier dalam satu viz |
+| Konsistensi comparison | Box kecil = konsisten; box besar = variabilitas tinggi |
+| Outlier detection | Dots yang meloncat = anomali (trigger investigation) |
+| Quality consistency | Identifikasi mana fakultas dengan kualitas control ketat vs loose |
+| Non-parametric | Tidak perlu asumsi data normal → applicable untuk real-world data |
+
+---
+
+### 4. Bar Chart - Total Publikasi Dosen
+
+**Deskripsi:**
+- Menunjukkan jumlah publikasi dosen per fakultas (research productivity)
+- Warna menunjukkan ranking publikasi
+- Hover untuk melihat total publikasi & insights
+
+**Kenapa Bar Chart**
+
+| Aspek | Deskripsi |
+|---|---|
+| Kategorikal data | Data type sama dengan distribusi mahasiswa (kategori + numerik) |
+| Ranking clarity | Bar otomatis menunjukkan ranking (Kedokteran #1, Seni&Desain #8) |
+| Comparison efficiency | Mudah bandingkan research productivity antar fakultas |
+| Visual consistency | Sama chart type dengan distribusi mahasiswa → audience tidak confusion |
+| Decision support | Membantu identify mana fakultas perlu research incentive vs support |
+
 
 ### 3. Export Data
 - Gunakan button download di atas tabel untuk export ke CSV
