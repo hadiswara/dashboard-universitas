@@ -96,7 +96,7 @@ dashboard-universitas/
 ├── data_universitas.csv      # Dataset simulasi universitas
 ├── requirements.txt          # Python dependencies
 ├── README.md                 # Dokumentasi proyek
-└── laporan_analisis.pdf      # Laporan evaluasi dashboard
+└── laporan_analisis.md       # Laporan evaluasi dashboard
 ```
 
 ## Dataset
