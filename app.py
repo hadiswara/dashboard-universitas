@@ -183,7 +183,6 @@ df_pivot = df_filtered.pivot_table(
 )
 
 st.dataframe(df_pivot, use_container_width=True)
-)
 
 # ========== ADDITIONAL ANALYSIS ==========
 st.header("🔬 Analisis Performa KPI Tambahan")
