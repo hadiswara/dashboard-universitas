@@ -15,163 +15,340 @@ Laporan ini menyajikan evaluasi kritis terhadap **Montana University System Dash
 
 ## II. ANALISIS DASHBOARD MONTANA UNIVERSITY SYSTEM
 
-### A. PENGGUNA DASHBOARD
+## A. PENGGUNA DASHBOARD
 
-#### Siapa yang Membutuhkan Dashboard?
-Dashboard Montana University System dirancang untuk:
+### 1. Siapa Saja yang Paling Membutuhkan Dashboard Ini?
 
-1. **Rektorat & Leadership**: Monitoring performa sistem universitas secara agregat
-2. **Pemerintah Negara Bagian**: Untuk alokasi budget dan policy making
-3. **Publik/Stakeholder**: Transparansi enrollment trends dan institutional performance
-4. **Internal Planning**: Perencanaan kapasitas, recruitment, dan resource allocation
+**Pengguna Utama:**
 
-**Alasan Kebutuhan:**
-- Visualisasi data enrollment memberikan insight tentang tren pertumbuhan/penurunan mahasiswa
-- Mendukung strategic planning berbasis data untuk multi-campus system
-- Accountability terhadap stakeholder eksternal (pemerintah, donatur)
-- Identifikasi trend anomali untuk quick response
+1. **Top Management \& C-Level Executives**
+    - President, Provost, Vice Chancellor
+    - Kebutuhan: Strategic planning, institutional performance monitoring
+    - Manfaat: Quick overview status finansial, enrollment trends, dan performance metrics
+2. **Board of Regents \& Government Officials**
+    - Policy makers yang membutuhkan accountability
+    - Kebutuhan: Compliance reporting, budget tracking, performance evaluation
+    - Manfaat: Evidence-based decision making untuk funding allocation
+3. **Finance \& Budget Officers**
+    - Accounting staff, Budget Analysts
+    - Kebutuhan: Financial tracking, budget utilization monitoring
+    - Manfaat: Real-time visibility ke operating budgets, revenue streams, mandatory fees
+4. **Enrollment \& Academic Planners**
+    - Registrars, Admissions Directors, Academic Deans
+    - Kebutuhan: Enrollment forecasting, demographic analysis, student retention data
+    - Manfaat: Data-driven enrollment strategies, identify at-risk student populations
+5. **Institutional Research \& Planning Department**
+    - IR professionals, Strategic planners
+    - Kebutuhan: Comprehensive data analysis, trend identification
+    - Manfaat: Historical data (10+ years) untuk time series analysis
+6. **Public Stakeholders \& Community**
+    - Parents, donors, taxpayers
+    - Kebutuhan: Transparency dan accountability
+    - Manfaat: Public access ke performance metrics, institutional outcomes
 
-#### Informasi yang Membantu Decision Making
+***
 
-**Contoh Keputusan Strategis yang Didukung:**
+### 2. Informasi Apa yang Membantu Pengambilan Keputusan?
 
-1. **Alokasi Anggaran**: Data enrollment per universitas → keputusan funding redistribution
-2. **Recruitment Planning**: Trend decline → increase marketing budget untuk targeted areas
-3. **Capacity Planning**: Pertumbuhan mahasiswa → planning untuk infrastruktur (dormitory, classroom)
-4. **Program Development**: Permintaan tinggi → development program baru di area tersebut
-5. **Policy Making**: Data trends → formula untuk admission standards atau program prioritization
+**Contoh Keputusan yang Didukung:**
 
----
 
-### B. TAMPILAN & FITUR DASHBOARD
+| Tipe Pengguna | Keputusan | Data dari Dashboard |
+| :-- | :-- | :-- |
+| **Provost** | Apakah FTE enrollment sustainable? | FTE Enrollments trend data (Fall 2016-2025) menunjukkan 2.1% pertumbuhan  |
+| **Budget Director** | Alokasi dana ke institusi mana? | Operating Budget breakdowns by institution dan systemwide trends |
+| **Enrollment Manager** | Target recruitment demographics? | Headcount demographics by gender, race, age range  |
+| **CFO** | Financial aid adequacy? | Financial Aid amounts, Tuition vs Western state peers |
+| **Academic Dean** | Program viability? | Degrees Awarded by type, discipline, institution trends |
+| **Gov Official** | Performance funding eligibility? | Performance Funding metrics (retention, completion, dual enrollment) |
 
-#### 1. Usability (Kemudahan Penggunaan)
+**Contoh Kasus Konkret:**
 
-**Kekuatan:**
-- Layout sederhana dengan navigasi intuitif
-- Filter tahun yang clear dan mudah diakses
-- Responsif di berbagai ukuran layar
-- Loading time cepat
+- Dashboard menunjukkan Fall 2025 headcount = 43,892 dengan 2.1% perubahan YoY
+- CFO dapat menggunakan data ini untuk menyesuaikan financial aid budget
+- Enrollment manager dapat mengidentifikasi bahwa Female enrollment (55%) > Male (45%) untuk recruitment strategy
 
-**Kelemahan:**
-- Legenda grafik kadang tidak jelas untuk mahasiswa baru
-- Tooltip tidak selalu informatif mengenai definisi metrik
-- Tidak ada breadcrumb untuk navigasi back
-- Mobile view bisa lebih optimal
+***
 
-#### 2. Efektivitas Visualisasi
+## B. TAMPILAN DAN FITUR DASHBOARD
 
-| Tipe Visualisasi | Efektivitas | Alasan |
-|---|---|---|
-| **Line Chart** | **Tinggi** | Trend pertumbuhan terlihat jelas, mudah membandingkan multi-series |
-| **Bar Chart** | **Tinggi** | Perbandingan antar universitas clear, sorting membantu |
-| **Data Table** | **Sedang** | Detail data tersedia, tapi hard to scan untuk banyak records |
-| **Color Coding** | **Sedang** | Warna konsisten tapi tidak semua colorblind-friendly |
+### 1. Apa yang Membuat Dashboard Ini Mudah atau Sulit Digunakan?
 
-#### 3. Fitur Interaktif
+**MUDAH DIGUNAKAN:**
 
-**Fitur yang Ditemukan:**
-1. **Dropdown Filter Tahun**: Memudahkan fokus periode tertentu
-2. **Hover Tooltip**: Menampilkan exact values dengan hover
-3. **Zoom/Pan**: Dapat memperbesar area tertentu di grafik
-4. **Download Chart**: Export chart sebagai image
-5. **Sort Table**: Click column header untuk sort
+1. **Navigasi Intuitif**
+    - Sidebar menu yang terorganisir dengan kategori jelas (Student Data, Finance Data)
+    - Breadcrumb navigation memudahkan tracking lokasi pengguna
+    - Tab-based interface untuk melihat perspektif berbeda
+2. **Layout yang Bersih**
+    - Design minimalis dengan white space yang cukup
+    - Professional color scheme (dark blue headers, white background)
+    - Informasi prioritas di atas, detail di bawah
+3. **Contextual Information**
+    - Setiap dashboard memiliki deskripsi data dan source attribution
+    - Penjelasan tentang data masking untuk privacy (cells < 5 are masked)
+    - Measurement period dan grouping options jelas
+4. **Quick Access Shortcuts**
+    - Direct links dari homepage ke main dashboards
+    - Footer dengan quick contact dan helpful links
+    - Search functionality di header
 
-**Manfaat Fitur:**
-- Filter tahun memungkinkan deep-dive analysis untuk periode spesifik
-- Tooltip mencegah chart overcrowding
-- Download memudahkan sharing report ke stakeholder
-- Sort membantu identify top/bottom performers
+**SULIT DIGUNAKAN:**
 
----
+1. **Filter Complexity**
+    - Multiple filter dropdowns (Measurement Period, Group By, Locale, Campus, etc.)
+    - Dropdown menus tidak intuitif untuk pengguna baru
+    - Limited guidance tentang apa setiap filter berarti
+2. **Tableau Learning Curve**
+    - Embedded Tableau requires users familiar dengan Tableau interface
+    - Toolbar buttons (Refresh, Download, Full Screen, Share) tidak self-explanatory
+    - Visualization controls tidak standar UI
+3. **Mobile Experience**
+    - Dashboard tidak optimal untuk mobile/tablet view
+    - Filters likely tidak responsive untuk small screens
+    - Long tables tidak scrollable dengan baik
+4. **Data Volume Overwhelming**
+    - First-time users mungkin confused dengan amount of data
+    - Multiple tabs dengan different visualizations
+    - No guided walkthroughs atau tutorials
 
-### C. KONTEN DASHBOARD
+***
 
-#### 1. Data yang Ditampilkan (Current)
+### 2. Apakah Grafik atau Tabel yang Digunakan Sudah Membantu Memahami Data?
 
-Dashboard Montana menampilkan:
-- **Headcount (Total Mahasiswa)** per universitas per tahun
-- **Disaggregate data**: By ethnicity, gender (optional)
-- **Multi-year trend**: 10+ tahun historical data
-- **Statistical summary**: Average, min-max per periode
-- **Comparative metrics**: Semester-to-semester change
+**SANGAT MEMBANTU:**
 
-#### 2. Gap Analysis - Informasi yang Seharusnya Ditambahkan
+1. **Stacked Bar Charts**
+    - Fall 2025 Headcount dengan Female (blue) dan Male (orange) breakdown
+    - Instantly menunjukkan composition dan perubahan over time
+    - Color-coded legend jelas dan accessible
+2. **Line Charts dengan Multiple Series**
+    - Enrollment history 10 tahun menunjukkan trends clearly
+    - Different colors untuk different institutions mudah dibedakan
+    - Trajectory patterns visible untuk forecasting
+3. **Geographic Heatmaps**
+    - County-level map visualization dengan color intensity
+    - Instantly identifies high/low density areas
+    - Interactive untuk drill-down ke specific counties
+4. **Summary Metrics (KPIs)**
+    - Fall 2025 Headcount = 43,892 (prominent display)
+    - Headcount Percent Change = 2.1% (mendampingi main metric)
+    - Enables quick decision-making tanpa perlu deep dive
+5. **Data Tables untuk Detail**
+    - Historical records dari Fall 2016-2025 tersedia
+    - Granular breakdown by demographics dan institutions
+    - Support untuk verification dan deep analysis
 
-**Untuk Enhancement:**
+**KURANG OPTIMAL:**
 
-| Metrik Tambahan | Alasan | Priority |
-|---|---|---|
-| **Retention Rate** | Indicator keberhasilan student experience | High |
-| **Graduation Rate** | Outcome indicator yang lebih meaningful | High |
-| **Revenue/Financial Impact** | Cost per student untuk planning | High |
-| **Program-specific Enrollment** | Detail breakdown untuk program planning | Medium |
-| **Geographic Origin** | Understand recruitment pattern | Medium |
-| **Time Series Forecast** | Predictive planning untuk 5 tahun ke depan | Medium |
-| **Benchmark vs National Average** | Context eksternal untuk comparison | Low |
+1. **Chart Density**
+    - Some dashboards (Institution-level) memiliki terlalu banyak lines
+    - Hard to distinguish individual series dengan many institutions
+    - Legend mungkin crowded
+2. **Scale Issues**
+    - Tidak semua charts consistent dalam scale
+    - Comparative analysis antar charts menjadi sulit
+3. **Missing Context**
+    - Tidak ada confidence intervals atau error margins
+    - Tidak ada annotations untuk significant events atau policy changes
+    - Trend lines atau averages tidak ditampilkan
 
----
+***
 
-## III. REKOMENDASI DESAIN DASHBOARD UNIVERSITAS OPTIMAL
+### 3. Fitur Interaktif Apa yang Anda Temukan?
 
-### A. Best Practices dari Montana Dashboard
+**FITUR INTERAKTIF DITEMUKAN:**
 
-**Yang Harus Dipertahankan:**
-1. Simplicity - fokus pada key metrics saja
-2. Clear labeling - setiap elemen harus self-explanatory
-3. Consistent color scheme - untuk brand recognition
-4. Multi-year trend view - untuk pattern identification
-5. Interactive filtering - untuk flexible analysis
 
-### B. Improvement untuk Dashboard Universitas Indonesia
+| Fitur | Lokasi | Fungsi | Contoh Penggunaan |
+| :-- | :-- | :-- | :-- |
+| **Filter Dropdowns** | Top section | Refine data view | Filter by Gender, Campus, Locale, Age Range |
+| **Tab Navigation** | Dashboard header | Switch perspectives | Demographics → Institution → Geographic view |
+| **Hover Tooltips** | Charts/tables | Show detailed values | Hover bar chart untuk see exact headcount |
+| **Refresh Button** | Bottom toolbar | Update data | Reload latest data snapshot |
+| **Download** | Bottom toolbar | Export visualizations | Save chart as image/PDF |
+| **Full Screen** | Bottom toolbar | Expanded view | Presentation mode untuk meeting |
+| **Share Button** | Bottom toolbar | Distribute results | Share link dengan colleagues |
+| **Legend Selection** | Color legend | Toggle series | Click Female/Male untuk highlight specific group |
+| **Data Table Expansion** | Below charts | See historical data | View Fall 2016-2025 detailed records |
 
-**Recommendation:**
-1. **Add contextual information**: Target benchmarks, national standards
-2. **Implement drill-down capability**: From institution → faculty → program level
-3. **Add predictive analytics**: Forecast untuk capacity planning
-4. **Improve accessibility**: WCAG compliance, colorblind palette
-5. **Add comparison tools**: Year-over-year, actual vs budget
-6. **Mobile-first design**: Mayoritas akses dari mobile
-7. **Real-time data integration**: Direct connection ke academic information system
+**Bagaimana Fitur Membantu Pengguna:**
 
----
+1. **Filter Dropdowns**
+    - User tidak perlu membuka multiple dashboards
+    - Single view dapat menampilkan berbagai perspektif
+    - Quick pivoting antara demographics tanpa reload
+2. **Tab Navigation**
+    - Same data, different views (Demographics/Institution/Map)
+    - Contextual analysis dalam satu page
+    - Supports exploratory data analysis workflow
+3. **Download/Share**
+    - Mendistribusikan insights ke stakeholders
+    - Creating presentations dan reports
+    - Supporting collaborative decision-making
+4. **Full Screen Mode**
+    - Presentasi di meeting tanpa distraksi
+    - Engagement untuk audience
+    - Professional appearance
 
-## IV. IMPLEMENTASI DASHBOARD UII
+***
 
-Berdasarkan learning dari Montana University System, telah dikembangkan:
+## C. KONTEN DASHBOARD
 
-**Dashboard Universitas - UII Implementation:**
-- **Target User**: Rektorat & Dekan untuk monitoring akademik
-- **Key Metrics**: Student enrollment, faculty productivity, graduation rate, academic quality
-- **Technology**: Streamlit + Plotly (modern, scalable)
-- **Interactivity**: Multi-select filters, drill-down capability
-- **Data Source**: Simulasi 5 tahun akademik, 8 fakultas
+### 1. Data atau Informasi Apa Saja yang Ditampilkan?
 
-**GitHub Repository**: [Link akan ditambahkan setelah publikasi]
+**STUDENT DATA SECTION:**
 
----
+- Enrollments (headcount, FTE)
+- Demographic breakdowns (gender, race/ethnicity, age range)
+- Geographic distribution (county-level mapping)
+- Dual enrollment participation
+- First-time freshman retention \& capture rates
+- Degrees awarded (by type, discipline, institution)
+- Graduation rates (bachelor's, associate's)
+- Workforce development outcomes
+- Student success metrics
 
-## V. KESIMPULAN
+**FINANCE \& BUDGET DATA SECTION:**
 
-Dashboard Montana University System merupakan contoh baik dari **institutional dashboard yang efektif** dengan:
-- Fokus pada kebutuhan user (rektorat, pemerintah)
-- Desain yang clean dan user-friendly
-- Visualisasi yang mendukung decision-making
+- Financial Aid amounts by student type
+- Tuition \& Fees (comparison dengan Western states)
+- Mandatory Fees by institution
+- Operating Budget (system-wide dan institution-level)
+    - Per-student funding
+    - State support money
+    - Revenue streams
+- FAFSA statistics dan trends
+- Resident Student Financial Aid (SB 60 reporting)
+- Performance Funding metrics (retention, completion, dual enrollment)
 
-Untuk dashboard universitas Indonesia, rekomendasi utama:
-1. Tambah metrik outcome (graduation, retention, employment)
-2. Implementasi drill-down untuk analisis granular
-3. Integrasikan dengan SIM (Sistem Informasi Manajemen) universitas
-4. Fokus pada kebutuhan spesifik stakeholder lokal
+**ADMINISTRATIVE DATA:**
 
----
+- FTE calculations dan definitions
+- Enrollment procedures
+- Award category codes
+- Peer analysis frameworks
+- Strategic plan metrics
+- Tuition \& fee schedules
 
-## REFERENSI
+**TEMPORAL COVERAGE:**
 
-1. Montana University System Dashboard. (2025). Retrieved from https://mus.edu/data/dashboards/headcount.html
-2. Bucknell University Dashboard. (2025). Retrieved from https://tableau.bucknell.edu/
-3. Few, S. (2013). *Dashboard Confusion Revisited*. Perceptual Edge.
-4. Yigitbasioglu, O. M., & Velcu, O. (2012). A review of dashboards in performance management: implications for design and research. *International Journal of Accounting Information Systems*, 13(1), 41-59.
-5. Cleveland, W. S., & McGill, R. (1987). *Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods*. Journal of the American Statistical Association.
+- Historical data: 10+ years (Fall 2016 - Fall 2025)
+- Measurement period: Usually Fall semester
+- Update frequency: "3rd week of term" untuk Census data
 
----
+***
+
+### 2. Informasi Apa yang Seharusnya Ditambahkan?
+
+**DARI PERSPEKTIF DATA SCIENCE \& GOVERNMENT ADMINISTRATION:**
+
+#### **Tier 1: Prioritas Tinggi (Critical)**
+
+1. **Predictive Analytics**
+    - Enrollment forecasts (next 3-5 years)
+    - Budget trend projections
+    - Churn risk indicators untuk student populations
+    - *Relevan untuk: Strategic planning, budget allocation*
+2. **Anomaly Detection \& Alerts**
+    - Flag significant deviations dari historical trends
+    - Alert for unusual enrollment patterns
+    - Budget overrun warnings
+    - *Relevan untuk: Real-time monitoring, proactive management*
+3. **Comparative Benchmarking**
+    - Peer institution comparisons (not just Western states)
+    - National benchmarks untuk enrollment, graduation rates
+    - Best practices indicators
+    - *Relevan untuk: Competitive analysis, improvement identification*
+4. **Student Success Metrics (Extended)**
+    - Time-to-degree analysis
+    - Course completion rates
+    - Grade distribution trends
+    - Transfer-out success tracking
+    - *Relevan untuk: Academic planning, retention improvement*
+5. **Cost-Benefit Analysis**
+    - ROI by program/discipline
+    - Cost per graduate
+    - Program viability metrics
+    - Funding efficiency indicators
+    - *Relevan untuk: Resource optimization, program decisions*
+
+#### **Tier 2: Prioritas Sedang (Important)**
+
+6. **Data Quality Indicators**
+    - Completeness metrics
+    - Data freshness badges
+    - Known limitations flagging
+    - Confidence levels untuk estimates
+    - *Relevan untuk: Trust dan transparency*
+7. **Drill-down Capabilities**
+    - From system → institution → department → program
+    - Granular student cohort analysis
+    - Time-period comparisons dengan controls
+    - *Relevan untuk: Root cause analysis*
+8. **External Context Factors**
+    - Economic indicators (unemployment, cost of living)
+    - Policy changes (legislation, regulation)
+    - Competitor actions (enrollment at other universities)
+    - Market trends (high school graduating cohorts)
+    - *Relevan untuk: Contextual interpretation*
+9. **Operational Metrics**
+    - Application processing time
+    - Financial aid disbursement timing
+    - Student satisfaction/NPS scores
+    - Advisor workload/capacity
+    - *Relevan untuk: Operational efficiency*
+10. **Equity \& Diversity Tracking**
+    - Disaggregation by multiple dimensions (intersection analysis)
+    - Equity gap identification
+    - Graduation gap trends
+    - Representation vs population targets
+    - *Relevan untuk: Inclusive excellence initiatives*
+
+#### **Tier 3: Prioritas Rendah (Nice-to-Have)**
+
+11. **Sentiment Analysis** (dari student surveys/feedback)
+    - Satisfaction trends
+    - Pain point identification
+    - Program perception changes
+    - *Relevan untuk: Student experience improvement*
+12. **Causal Analysis**
+    - Impact assessment untuk policy changes
+    - Intervention effectiveness measurement
+    - Attribution modeling
+    - *Relevan untuk: Evidence-based policy*
+13. **Export/Integration Features**
+    - API endpoints untuk programmatic access
+    - Real-time data feeds untuk downstream systems
+    - Scheduled reports distribution
+    - *Relevan untuk: System integration, automation*
+14. **Custom Dashboard Builder**
+    - User-created dashboards
+    - Personalized metrics
+    - Saved filter presets
+    - *Relevan untuk: Different user needs*
+
+***
+
+## **REKOMENDASI IMPLEMENTASI**
+
+**Untuk MUS specifically:**
+
+1. Tambahkan predictive enrollment modeling (HIGH IMPACT)
+2. Implement anomaly detection untuk enrollment \& budget (MEDIUM effort, HIGH value)
+3. Add comparative benchmarking dengan peer institutions (MEDIUM effort)
+4. Extended student success metrics dengan time-to-degree (MEDIUM effort)
+5. Data quality indicators \& documentation (LOW effort, HIGH trust impact)
+
+**Dari perspektif government institutions seperti Badan Pendapatan Daerah:**
+
+- Dashboard MUS model bisa diadaptasi untuk tax compliance tracking
+- Anomaly detection → identify suspicious transactions
+- Benchmarking → peer tax collection performance
+- Predictive → forecast revenue collections
+- Student demographic analysis → analogous ke taxpayer segmentation
+
+***
+
+**KESIMPULAN:**
+Dashboard MUS adalah foundation yang solid untuk institutional reporting dengan visualisasi yang efektif. Dengan penambahan predictive analytics, anomaly detection, dan expanded student success metrics, platform ini bisa menjadi strategic decision-making tool yang lebih powerful.
