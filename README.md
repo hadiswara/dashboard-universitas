@@ -192,7 +192,7 @@ bisa di akses di link : https://hadiswara-dashboard-universitas.streamlit.app/
 
 ---
 
-### 4. Bar Chart - Total Publikasi Dosen
+### 4. Horizontal Bar Chart - Total Publikasi Dosen
 
 **Deskripsi:**
 - Menunjukkan jumlah publikasi dosen per fakultas (research productivity)
