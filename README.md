@@ -241,21 +241,6 @@ Untuk kontribusi atau saran perbaikan:
 4. Push ke branch (`git push origin feature/improvement`)
 5. Buat Pull Request
 
-## Kontak & Support
-
-- **Author**: [Nama Mahasiswa]
-- **Institusi**: Universitas Islam Indonesia - Magister Informatika
-- **Email**: khaerul.hadiswara@gmail.com
-- **GitHub**: [GitHub Profile]
-
----
-
-**Catatan Penting:**
-- Dashboard ini menggunakan dataset simulasi untuk tujuan demonstrasi
-- Untuk production, gunakan data real dari academic information system universitas
-- Perlu approval dari IT/System Administrator untuk deployment
-- Presentasi dashboard dijadwalkan pada minggu ke-11
-
 ---
 
 *Last Updated: 12 Desember 2025*
